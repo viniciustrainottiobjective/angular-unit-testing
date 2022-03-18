@@ -16,6 +16,19 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
+To be running tests in Angular, you must `asdf` installed
+
+```shell
+$ mkdir -p /opt/angular-tests
+$ asdf plugin add nodejs
+$ asdf install nodejs 14.15.0
+$ asdf local nodejs 14.15.0
+$ npm install @angular/cli
+$ ./node_modules/@angular/cli/bin/ng.js new angular-unit-testing
+$ cd angular-unit-testing
+$ ./node_modules/@angular/cli/bin/ng.js test
+```
+
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
